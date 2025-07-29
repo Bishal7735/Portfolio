@@ -26,7 +26,6 @@
         
         .butt{                      /* for navbar_buttons */ 
             background-color: transparent;
-            color: aqua;
             margin-right: 15%;
             margin-top: 14px;
             padding: .45%;
@@ -37,6 +36,11 @@
             cursor: pointer;
         }
 
+        .link{                      /*for href tag */
+            text-decoration: none;
+            color: aqua;
+        }
+        
         .container{                    /* for main */ 
             width: 98%;
             height: 90%;
@@ -77,10 +81,10 @@
     <body>
         <header>
             <div class="one">
-                <button class="butt">About Me</button>
-                <button class="butt">Pojectes</button>
-                <button class="butt">Sevices</button>
-                <button class="butt">Contact Me</button>
+                <button class="butt"><a href="./Portfolio_aboutme.html" class="link">About Me</a></button>
+                <button class="butt"><a href="./portfolio_projects.html" class="link">Pojectes</a></button>
+                <button class="butt"><a href="./portfolio_Service.html" class="link">Sevices</a></button>
+                <button class="butt"><a href="./portfolio_Contact.html" class="link">Contact Me</a></button>
             </div>
         </header>
         <main>

@@ -26,7 +26,6 @@
         
         .butt{                      /* for navbar_buttons */ 
             background-color: transparent;
-            color: aqua;
             margin-right: 15%;
             margin-top: 14px;
             padding: .45%;
@@ -36,14 +35,34 @@
             font-weight: 1000;
             cursor: pointer;
         }
+
+        .link{                      /*for href tag */
+            text-decoration: none;
+            color: aqua;
+        }
         
-        .containr{                  /*for set background Desing*/
+        .container{                    /* for main */ 
             width: 98%;
-            height: 95%;
-            background-size: cover;
+            height: 90%;
+            margin:15px;
+            background-size: auto;
+            background-repeat: no-repeat;
             background-position: center;
-            background-image: url(https://i.ibb.co/6RzShcKW/Aboutme-Desing.jpg);
-            margin: 10px;
+        }
+
+        .ico{                        /* for Meadia icons */ 
+            height: 49px;
+            width: 5%;
+            font-size: 45px;
+            padding: 0;
+            background-color: lightpink;
+            color: black ;
+            cursor: pointer;
+            border: none;
+            box-shadow: black;
+            border-radius: 9px;
+            margin-top: 6%;
+            margin-left: 1%;
         }
         
         #foot{                       /* for footer */ 
@@ -55,26 +74,25 @@
             position: relative;
             cursor: none;
         }
-
     </style>
     </head>
     <body>
         <header>
             <div class="one">
-                <button class="butt">About Me</button>
-                <button class="butt">Pojectes</button>
-                <button class="butt">Sevices</button>
-                <button class="butt">Contact Me</button>
+                <button class="butt"><a href="./My_portfolio.html" class="link">Home</a></button>
+                <button class="butt"><a href="./portfolio_projects.html" class="link">Pojectes</a></button>
+                <button class="butt"><a href="./portfolio_Service.html" class="link">Sevices</a></button>
+                <button class="butt"><a href="./portfolio_Contact.html" class="link">Contact</a></button>
             </div>
         </header>
         <main>
             <div class="containr">
-
+                <img src="https://i.ibb.co/6RzShcKW/Aboutme-Desing.jpg" alt="_blank" style="margin: 15px; margin-left: 2.5%; border-radius: 8px;">
             </div>
         </main>
         <footer id="foot">
             <p
-                style="font-weight: 1000; font-family: verdana; padding-top: 2.5%;">
+                style="font-weight: 1000; font-family: verdana; padding-top: 2.5%; margin-top: 0;">
                 &copy 2025 Bishal Ray
             </p>
         </footer>
