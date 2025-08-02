@@ -1,0 +1,157 @@
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio</title>
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+            integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+        body{
+            background: linear-gradient(#212130,#39304A);
+            margin: 2px;
+        }
+
+        .one{                      /* for navbar */ 
+            background:linear-gradient(to right,#250e2c,#037ab6);
+            width: 99%;
+            height: 60px;
+            margin-top: 5px;
+            border-radius: 10px;
+            text-align: right;
+            border: 2px solid rgba(255, 255, 255, 0.301);
+            position: relative;
+        }
+        
+        .butt{                      /* for navbar_buttons */ 
+            background-color: transparent;
+            margin-right: 15%;
+            margin-top: 14px;
+            padding: .45%;
+            border: 1px solid white;    
+            border-radius: 9px;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 1000;
+            cursor: pointer;
+        }
+
+        .link{                      /*for href tag */
+            text-decoration: none;
+            color: aqua;
+        }
+        
+        .container{                    /* for main */ 
+            width: 80%;
+            height: 60%;
+            border-radius: 1em;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            padding: 3%;
+            margin: 3em 6em;
+            background: url(https://i.ibb.co/Vc8dhYK1/leaf.jpg) no-repeat;
+            background-size: 100%;
+        }
+
+        .separation{
+            background: rgba(238, 231, 231, 0.1);          /* transparent white */
+            border-radius: .9em;
+            padding: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);                        /* main blur */
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+            color: #fff;
+            height: 50%;
+            width: 14%;
+        }
+        
+        .s_name{                                                /* for service name*/              
+            margin-top: 1.2em;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            margin-left: .5em;
+            text-shadow:2px 2px 5px black ;
+            cursor: none;
+        }
+
+        .view{                                                  /* for view more button */
+            background-color: rgb(29, 147, 186);
+            color: aqua;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            border: none;
+            border-radius: 5em;
+            padding: .9em;
+            margin-left: 2em;
+            margin-top: 1em;
+            cursor: pointer;
+            box-shadow:0 4px 8px black;
+        }
+
+        #foot{                                                   /* for footer */ 
+            width: 100%;
+            height: 13%;
+            background-color: #051f20;
+            color: aqua;
+            text-align: center;
+            position: relative;
+            cursor: none;
+        }
+    </style>
+    </head>
+    <body>
+        <header>
+            <div class="one">
+                <button class="butt"><a href="./My_portfolio.html"
+                        class="link">Home</a></button>
+                <button class="butt"><a href="./portfolio_projects.html"
+                        class="link">Pojectes</a></button>
+                <button class="butt"><a href="./portfolio_Service.html"
+                        class="link">Sevices</a></button>
+                <button class="butt"><a href="./portfolio_Contact.html"
+                        class="link">Contact</a></button>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <span class="separation"><i class="fa-solid fa-window-maximize"
+                        style="font-size: 3em; margin-left: .8em; cursor: none;"></i><h3
+                        class="s_name">Web Devlopment</h3> <button
+                        class="view" style="margin-top: 2em;">View
+                        More</button></span>
+
+                <span class="separation"><i class="fa-solid fa-sliders"
+                        style="font-size: 2.7em; margin-left: .8em; cursor: none;"></i><h3
+                        class="s_name">Photo & Video Editing</h3> <button
+                        class="view">View More</button></span>
+
+                <span class="separation"><i class="fa-solid fa-palette"
+                        style="font-size: 2.7em; margin-left: .8em; cursor: none;"></i><h3
+                        style="margin-top: 2.4em; margin-left: .5em;">Graphic
+                        Design</h3> <button
+                        class="view">View More</button></span>
+
+                <span class="separation"><i class="fa-solid fa-database"
+                        style="font-size: 2.7em; margin-left: .8em; cursor: none;"></i><h3
+                        style="font-size: medium; margin-bottom: 0;">MS Excel
+                        <br>(Organizing, Analyzing and Visualizing data)</h3>
+                    <button
+                        class="view" style="margin-top: 1em;">View
+                        More</button></span>
+
+                <span class="separation"><i
+                        class="fa-solid fa-person-chalkboard"
+                        style="font-size: 2.7em; margin-left: 1em; cursor: none;"></i><h3
+                        style="margin-left: 1.5em;">Power Ponit
+                        Presentation</h3> <button
+                        class="view" style="margin-top: 1em;">View
+                        More</button></span>
+            </div>
+        </main>
+        <footer id="foot">
+            <p
+                style="font-weight: 1000; font-family: verdana; padding-top: 2.5%; margin-top: 0;">
+                &copy 2025 Bishal Ray
+            </p>
+        </footer>
+    </body>
+</html>
